@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Sticker Inks Formatter</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+
+<body class="page-tools-line-break-remover-index">
+    <div class="columns">
+      <input type="checkbox" id="replace-space" style="display:none"/>
+      <input type="text" id="replace-char" maxlength="10" size="5" value=", " style="display:none"/>
+    </div>
+    <div style="padding:100px;">
+      <p>Paste in inks, and press C to copy</p>
+      <textarea id="text-orig" class="textarea has-fixed-size" placeholder="" rows="8"></textarea>
+    </div>
+    <textarea id="text-processed" class="textarea" placeholder="" rows="1" readonly style="display:none"></textarea>
+  </div>
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="line-break-removal.js"></script>
+</body>
+
+</html>
